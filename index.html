@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore The World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Explore<span>.</span></a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#about">About Us</a>
+            </nav>
+
+            <a href="#destinations" class="btn-dark">Explore Now</a>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <span class="subtitle">DISCOVER THE WORLD</span>
+            <h1>Explore The <br><span>Beautiful World</span></h1>
+            <p>Discover amazing places, explore different cultures and experience unforgettable journeys.</p>
+            <a href="#destinations" class="btn-primary">Start Exploring</a>
+        </div>
+    </section>
+    <!-- ================= DESTINATIONS SECTION ================= -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-tag">YOUR NEXT ADVENTURE</span>
+                <h2>Popular Destinations</h2>
+                <p>Explore some of the most beautiful cities in the world.</p>
+            </div>
+
+            <div class="destination-card">
+                <!-- الجزء الأيسر: التفاصيل -->
+                <div class="card-left">
+                    <div class="counter-top" id="counterTop">01 / 04</div>
+                    <span class="country-name" id="countryName">FRANCE</span>
+                    <h3 class="city-name" id="cityName">Paris</h3>
+                    <p class="city-desc" id="cityDesc">
+                        Paris is one of the most beautiful cities in the world, famous for its art, architecture and
+                        romantic atmosphere.
+                    </p>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Continent</strong>
+                            <span id="continent">Europe</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Famous Food</strong>
+                            <span id="famousFood">Croissant, Macarons</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Famous Place</strong>
+                            <span id="famousPlace">Eiffel Tower</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Language</strong>
+                            <span id="language">French</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-explore-more" id="exploreMoreBtn">Explore More</button>
+                </div>
+
+                <!-- الجزء الأيمن: الصورة والعداد -->
+                <div class="card-right">
+                    <img id="cityImage" src="images/paris.jpg" alt="Paris">
+                    <div class="badge-overlay">
+                        <span>DESTINATION</span>
+                        <strong id="counterBadge">01</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار التنقل والنقط -->
+            <div class="slider-controls">
+                <button class="nav-btn" id="prevBtn">&larr; Previous</button>
+                <div class="dots-container" id="dotsContainer">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                </div>
+                <button class="nav-btn" id="nextBtn">Next &rarr;</button>
+            </div>
+        </div>
+    </section>
+    <!-- ================= FOOTER SECTION ================= -->
+    <section class="about" id="about">
+        <footer class="site-footer">
+            <div class="footer-container">
+                <h3>Travel. Discover. Enjoy.</h3>
+                <p>Every destination has a story. Let's discover it together.</p>
+            </div>
+             <div class="footer-bottom">
+                    <p>&copy; 2026 Explore The World. All Rights Reserved.</p>
+                </div>
+        </footer>
+    </section>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
