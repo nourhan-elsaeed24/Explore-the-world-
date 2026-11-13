@@ -125,7 +125,6 @@ html {
     background-color: #c98421;
     transform: translateY(-2px);
 }
-/* ================= DESTINATIONS SECTION ================= */
 .destinations {
     background-color: #f4f4f4;
     padding: 80px 0;
@@ -275,7 +274,7 @@ html {
     margin-top: 5px;
 }
 
-/* أزرار التنقل والنقط */
+
 .slider-controls {
     display: flex;
     justify-content: center;
@@ -317,7 +316,7 @@ html {
     background-color:#e9a23b;
     transform: scale(1.2);
 }
-/* ================= FOOTER SECTION ================= --> */
+
 .site-footer {
     background-color: #17202a;
     color: white;
@@ -352,4 +351,15 @@ html {
     font-size: 12px;
     color: #888888;
     margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+   
+    nav, .navbar, .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .nav-links a, nav a {
+        font-size: 14px;
+    }
 }
